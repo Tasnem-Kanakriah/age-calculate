@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>age calculator</h2>
+
+        <div class="enter-age-container">
+
+            <div class="enter year-con">
+                <label for="year">YEAR :</label>
+                <input type="text" placeholder="YYYY" id="year">
+            </div>
+
+            <div class="enter month-con">
+                <label for="month">MONTH :</label>
+                <input type="text" placeholder="MM" id="month">
+            </div>
+
+            <div class="enter day-con">
+                <label for="day">DAY :</label>
+                <input type="text" placeholder="DD" id="day">
+            </div>            
+
+        </div>
+
+        <i class='bx false bx-x-circle' ></i>
+        <hr>
+        <i class='bx true bx-check-circle' onclick="age()" ></i>
+
+        <div class="result-age-container">
+
+            <div class="result result-year-con">
+                <h1>Years</h1>
+                <div class="empty empty-year">
+                    - -
+                </div>
+            </div>
+
+            <div class="result result-month-con">
+                <h1>Month</h1>
+                <div class="empty empty-month">
+                    - -
+                </div>
+            </div>
+
+            <div class="result result-day-con">
+                <h1>Days</h1>
+                <div class="empty empty-day">
+                    - -
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

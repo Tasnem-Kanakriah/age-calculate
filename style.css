@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body {
+    background-color: rgb(201, 182, 219);
+    height: 100vh;
+    font-family: 'Architects Daughter', cursive;
+}
+input::placeholder {
+    font-family: 'Zeyada', cursive;
+    font-weight: 500;
+    color: #ccc;
+}
+.container{
+    position: relative;
+    background-color: rgb(234, 252, 220);
+    width: 24vw;
+    height: 50vh;
+    border-radius: 20px 20px 160px 20px;
+    padding: 30px 50px;
+    border: 4px solid #ccc;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+body , .enter-age-container , .enter , .result-age-container , .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter-age-container {
+    gap: 40px;
+}
+label , h1 , .empty {
+    font-size: 30px;
+    font-weight: 900;
+}
+label {
+    margin-bottom: 10px;
+}
+hr {
+    width: 84%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid rgb(201, 182, 219);
+}
+.enter {
+    flex-direction: column;
+}
+input {
+    font-size: 30px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.bx {
+    position: absolute;
+    color: rgb(201, 182, 219);
+    font-weight: normal;
+    font-size: 50px;
+    top: 277px;
+    cursor: pointer;
+}
+.bx-x-circle:hover {
+    color: red;
+}
+.bx-check-circle:hover {
+    color: green;
+}
+.bx-x-circle {
+    left: 40px;
+}
+.bx-check-circle {
+    right: 40px;
+}
+
+.result-age-container {
+    gap: 50px;
+}
+.empty {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 6px;
+}
+
+
+
+@media (max-width : 410px) {
+    body {
+        margin: 0;
+    }
+    .container {
+        width: 70vw;
+        border: none;
+        border-radius: 10px;
+        height: 88vh;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .enter-age-container , .result-age-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .result-age-container h1 {
+        margin: 0;
+    }
+    .bx {
+        top: 420px;
+    }
+    .bx-x-circle {
+        left: 25px;
+    }
+    .bx-check-circle {
+        right: 25px;
+    }
+}
